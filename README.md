@@ -1,4 +1,4 @@
-# grunt-contrib-coffee v1.0.0 [![Build Status: Linux](https://travis-ci.org/gruntjs/grunt-contrib-coffee.svg?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-coffee) [![Build Status: Windows](https://ci.appveyor.com/api/projects/status/ns3waxwcw8ddcr3f/branch/master?svg=true)](https://ci.appveyor.com/project/gruntjs/grunt-contrib-coffee/branch/master)
+# grunt-contrib-coffee v2.0.0 [![Build Status: Linux](https://travis-ci.org/gruntjs/grunt-contrib-coffee.svg?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-coffee) [![Build Status: Windows](https://ci.appveyor.com/api/projects/status/ns3waxwcw8ddcr3f/branch/master?svg=true)](https://ci.appveyor.com/project/gruntjs/grunt-contrib-coffee/branch/master)
 
 > Compile CoffeeScript files to JavaScript
 
@@ -29,7 +29,7 @@ Task targets, files and options may be specified according to the grunt [Configu
 ### Options
 
 #### separator
-Type: `String`  
+Type: `String`
 Default: linefeed
 
 Concatenated files will be joined on this string.
@@ -40,25 +40,25 @@ Type: `Boolean`
 Compile the JavaScript without the top-level function safety wrapper.
 
 #### join
-Type: `Boolean`  
+Type: `Boolean`
 Default: `false`
 
 When compiling multiple .coffee files into a single .js file, concatenate first.
 
 #### sourceMap
-Type: `Boolean`  
+Type: `Boolean`
 Default: `false`
 
 Compile JavaScript and create a .map file linking it to the CoffeeScript source. When compiling multiple .coffee files to a single .js file, concatenation occurs as though the 'join' option is enabled
 
 #### sourceMapDir
-Type: `String`  
+Type: `String`
 Default: (same path as your compiled js files)
 
 Generated source map files will be created here.
 
 #### joinExt
-Type: `String`  
+Type: `String`
 Default: '.src.coffee'
 
 Resulting extension when joining multiple CoffeeScript files.
@@ -131,6 +131,7 @@ For more examples on how to use the `expand` API to manipulate the default dynam
 
 ## Release History
 
+ * 2017-06-18   v2.0.0    Update to CoffeeScript 2.x
  * 2016-02-15   v1.0.0   Updates to CoffeeScript 1.10.0. Update other dependencies. Use `options.sourceMapDir` when creating `sourceRoot`. Logs information if no valid files were matched.
  * 2015-02-20   v0.13.0   Updates to CoffeeScript 1.9.1.
  * 2014-10-04   v0.12.0   Fixes litcoffee sourcemaps. Updates to CoffeeScript 1.8.0.
